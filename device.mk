@@ -13,4 +13,4 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := p80h_d4c7
+PRODUCT_NAME := omni_p80h_d4c7
