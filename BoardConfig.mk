@@ -1,6 +1,6 @@
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := Aquaris_M10
+TARGET_BOOTLOADER_BOARD_NAME := Teclast_P80H_D4C7
 
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
@@ -26,7 +26,7 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/bq/freezerhd/kernel
+TARGET_PREBUILT_KERNEL := device/teclast/p80h_d4c7/kernel
 BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --cmdline bootopt=64S3,32N2,64N2 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x0df88000
 
 # Partitions
@@ -43,7 +43,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
 # TWRP-Specific
-TARGET_RECOVERY_FSTAB := device/bq/freezerhd/recovery/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/teclast/p80h_d4c7/recovery/etc/twrp.fstab
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_THEME := portrait_hdpi
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
